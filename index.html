@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="js/jquery-1.12.0.js" type="text/javascript"></script>
-    <script src="js/scripts.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8"></link>
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8"></link>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class = "container">
-      <h1 class = "btn btn-primary">Vacation</h1>
-
-    </div>
-  </body>
+   <head>
+      <script src="js/jquery-1.12.0.js" type="text/javascript"></script>
+      <script src="js/scripts.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+      </link>
+      <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+      </link>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <div class = "container">
+         <div class = "row">
+            <div class = "col-sm-9 main">
+               <h1>Choose Your Vacation</h1>
+               <form>
+                  <label>What activity do you enjoy the most?</label>
+                  <select id="activity" class = "form-control">
+                     <option value = "smoke">Smoking my pipe while snacking</p>
+                     <option value = "fight">Battle!</p>
+                     <option value = "forest">Becoming one with the forest</p>
+                  </select>
+                  <label>How do you feel about volcanos?</label>
+                  <select id="volcano" class = "form-control">
+                     <option value = "volcano">I love them!</option>
+                     <option value = "noVolcano">I hate them.</option>
+                  </select>
+                  <label>Do you like the sun?</label>
+                  <select id="sun" class = "form-control">
+                     <option value = "yes">Yes</p>
+                     <option value = "no">I'd rather stay in my cave</p>
+                  </select>
+                  <label>How do you feel about being around humans?</label>
+                  <select id="humans" class = "form-control">
+                     <option value = "good">Good</p>
+                     <option value = "fine">Fine I guess</p>
+                     <option value = "fine">I really dislike them!</p>
+                  </select>
+                  <label>Do you like trees?</label>
+                  <select id="trees" class = "form-control">
+                     <option value = "build">Yes, for chopping down and building stuff</p>
+                     <option value = "walk">Yes, for walking through and talking to.</p>
+                  </select>
+                  <button>Show me my vacation!</button>
+               </form>
+               <div id="shire">
+                  <p>You're going to the shire!</p>
+                  <img src = "img/shire.jpg">
+               </div>
+               <div id ="rivendel">
+                  <p>You're going to rivendel!!</p>
+                  <img src = "img/rivendell.jpg">
+               </div>
+               <div id ="mordor">
+                  <p>You're going to mordor!</p>
+                  <img src = "img/mordor.jpg">
+               </div>
+               <div id ="moria">
+                  <p>You're going to the mines of moria!</p>
+                  <img src = "img/moria.jpg">
+               </div>
+               <div id ="gondor">
+                  <p>You're going to gondor!!</p>
+                  <img src = "img/gondor.jpg">
+               </div>
+               <div id ="idk">
+                  <p>Somewhere In Middle Earth</p>
+                  <img src = "img/middleEarth.jpg">
+               </div>
+            </div>
+            <div class = "col-sm-3 sidebar">
+               <h1>All Your Potential Vacations</h1>
+               <h3>Gondor</h3>
+               <img src = "img/gondor.jpg"></br>
+               <h3>Mordor</h3>
+               <img src = "img/mordor.jpg"></br>
+               <h3>Rivendell</h3>
+               <img src = "img/rivendell.jpg"></br>
+               <h3>Moria</h3>
+               <img src = "img/moria.jpg"></br>
+               <h3>The Shire</h3>
+               <img src = "img/shire.jpg"></br>
+               <h3>Anywhere Else In MIddle Earth</h3>
+               <img src = "img/middleEarth.jpg"></br>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
