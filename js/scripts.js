@@ -4,53 +4,54 @@ $("select").prop('selectedIndex', -1);
 
 $("form").submit(function(event) {
 event.preventDefault()
+var name = $("#name").val();
 var volcano = $("#volcano").val();
 var activity = $("#activity").val();
 var likeSun = $("#sun").val();
 var eyes = $("#eyes").val();
 var trees = $("#trees").val();
 var humans = $("#humans").val();
-console.log(activity)
-console.log(humans)
+
+$("#inputName").text(name + "!")
 if(activity === null && volcano === null) {
   $(".main div").hide()
-  $("#idk").show()
+  $("#idk").fadeIn(2000)
 }else if(activity==="smoke" && trees === "walk"){
   $(".main div").hide()
-  $("#shire").show()
+  $("#shire").fadeIn(2000)
 }else if(activity==="battle" && volcano === "volcano"){
   $(".main div").hide()
-  $("#shire").show()
+  $("#shire").fadeIn(2000)
 }else if(activity==="fight" && likeSun === "no"){
   $(".main div").hide()
-  $("#moria").show()
+  $("#moria").fadeIn(2000)
 }else if(activity==="forest" && trees === "build"){
   $(".main div").hide()
-  $("#mordor").show()
+  $("#mordor").fadeIn(2000)
 }else if(activity==="forest" && trees === "walk"){
   $(".main div").hide()
-  $("#mordor").show()
+  $("#mordor").fadeIn(2000)
 }else if(activity==="fight" && humans === "good"){
   $(".main div").hide()
-  $("#gondor").show()
+  $("#gondor").fadeIn(2000)
 }else if (activity ==="smoke") {
   $(".main div").hide()
-  $("#shire").show()
+  $("#shire").fadeIn(2000)
 }else if(activity==="fight"){
   $(".main div").hide()
-  $("#mordor").show()
+  $("#mordor").fadeIn(2000)
 }else if(activity === "forest"){
   $(".main div").hide()
-  $("#rivendel").show()
+  $("#rivendel").fadeIn(2000)
 }else if(humans === "good"){
   $(".main div").hide()
-  $("#gondor").show()
+  $("#gondor").fadeIn(2000)
 }else if(activity="battle"){
   $(".main div").hide()
-  $("#mordor").show()
+  $("#mordor").fadeIn(2000)
 }else {
   $(".main div").hide()
-  $("#idk").show()
+  $("#idk").fadeIn(2000)
 }
 
 (function blink() {
